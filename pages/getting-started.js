@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import AdComponent from '../components/AdComponent';
 
 export default function GettingStarted() {
   return (
@@ -20,6 +21,8 @@ export default function GettingStarted() {
             </p>
           </div>
           
+          <AdComponent slot="7894561230" />
+          
           <div className="card p-4 sm:p-6 mb-6 sm:mb-10">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Prerequisites</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">
@@ -31,6 +34,8 @@ export default function GettingStarted() {
               <li>Stable internet connection</li>
             </ul>
           </div>
+          
+          <AdComponent slot="7894561231" />
           
           <div className="card p-4 sm:p-6 mb-6 sm:mb-10">
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">Installation</h2>
@@ -56,6 +61,8 @@ export default function GettingStarted() {
               <li>Exploring the customization options</li>
             </ul>
           </div>
+          
+          <AdComponent slot="7894561232" />
           
           <div className="flex flex-col sm:flex-row justify-between items-center pt-4 sm:pt-6 border-t border-gray-200 dark:border-gray-700 gap-4 sm:gap-0">
             <Link href="/">

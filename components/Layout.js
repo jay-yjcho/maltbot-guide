@@ -19,13 +19,23 @@ export default function Layout({ children, title = 'MaltBot Guide' }) {
             <Link href="/">
               <a className="text-xl font-bold text-blue-600 dark:text-blue-400 truncate">MaltBot Guide</a>
             </Link>
-            <nav className="hidden md:flex space-x-4 lg:space-x-6 overflow-x-auto">
-              <Link href="/"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-sm">Home</a></Link>
-              <Link href="/getting-started"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-sm">Getting Started</a></Link>
-              <Link href="/configuration"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-sm">Configuration</a></Link>
-              <Link href="/features"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-sm">Features</a></Link>
-              <Link href="/troubleshooting"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-sm">Troubleshooting</a></Link>
-              <Link href="/advanced"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-sm">Advanced</a></Link>
+            <nav className="hidden md:flex space-x-2 lg:space-x-3 overflow-x-auto">
+              <Link href="/"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Home</a></Link>
+              <Link href="/getting-started"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Getting Started</a></Link>
+              <Link href="/configuration"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Configuration</a></Link>
+              <Link href="/features"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Features</a></Link>
+              <Link href="/troubleshooting"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Troubleshooting</a></Link>
+              <Link href="/advanced"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Advanced</a></Link>
+              <Link href="/best-practices"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Best Practices</a></Link>
+              <Link href="/case-studies"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Case Studies</a></Link>
+              <Link href="/tutorials"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Tutorials</a></Link>
+              <Link href="/faq"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">FAQ</a></Link>
+              <Link href="/api-reference"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">API Reference</a></Link>
+              <Link href="/changelog"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Changelog</a></Link>
+              <Link href="/integrations"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Integrations</a></Link>
+              <Link href="/security"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Security</a></Link>
+              <Link href="/performance"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Performance</a></Link>
+              <Link href="/support"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 whitespace-nowrap text-xs sm:text-sm">Support</a></Link>
             </nav>
             <div className="md:hidden">
               <button 
@@ -47,14 +57,24 @@ export default function Layout({ children, title = 'MaltBot Guide' }) {
           
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700 max-h-[70vh] overflow-y-auto">
               <div className="flex flex-col space-y-3">
-                <Link href="/"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base">Home</a></Link>
-                <Link href="/getting-started"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base">Getting Started</a></Link>
-                <Link href="/configuration"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base">Configuration</a></Link>
-                <Link href="/features"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base">Features</a></Link>
-                <Link href="/troubleshooting"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base">Troubleshooting</a></Link>
-                <Link href="/advanced"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-base">Advanced</a></Link>
+                <Link href="/"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Home</a></Link>
+                <Link href="/getting-started"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Getting Started</a></Link>
+                <Link href="/configuration"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Configuration</a></Link>
+                <Link href="/features"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Features</a></Link>
+                <Link href="/troubleshooting"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Troubleshooting</a></Link>
+                <Link href="/advanced"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Advanced</a></Link>
+                <Link href="/best-practices"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Best Practices</a></Link>
+                <Link href="/case-studies"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Case Studies</a></Link>
+                <Link href="/tutorials"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Tutorials</a></Link>
+                <Link href="/faq"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">FAQ</a></Link>
+                <Link href="/api-reference"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">API Reference</a></Link>
+                <Link href="/changelog"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Changelog</a></Link>
+                <Link href="/integrations"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Integrations</a></Link>
+                <Link href="/security"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Security</a></Link>
+                <Link href="/performance"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Performance</a></Link>
+                <Link href="/support"><a className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-sm sm:text-base">Support</a></Link>
               </div>
             </div>
           )}
